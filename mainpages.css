@@ -1,5 +1,10 @@
 * {box-sizing: border-box;}
 
+p.hei {
+  margin-top: -22px;
+  font-style: italic;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #ddd;
