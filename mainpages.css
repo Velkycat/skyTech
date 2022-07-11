@@ -1,8 +1,21 @@
 * {box-sizing: border-box;}
 
+.hi {
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: #de44e6;
+}
+
 p.hei {
   margin-top: -22px;
   font-style: italic;
+}
+
+.hei a {
+  color: #de44e6;
 }
 
 .navbar {
