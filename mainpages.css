@@ -1,5 +1,9 @@
 * {box-sizing: border-box;}
 
+.bio {
+  color: white;
+  font-family: Times New Roman;
+}
 .hi {
   color: white;
 }
