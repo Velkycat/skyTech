@@ -108,10 +108,16 @@ text-decoration: underline overline white;
 color: white;
 }
 
+.header a.logo:hover {
+font-size: 25px;
+font-weight: bold;
+text-decoration: underline overline #de44e6;
+color: #de44e6;
+}
+
 .header a:hover {
 background-color: #000610;
 color: #de44e6;
-text-decoration: underline overline #de44e6;
 }
 
 .header a.active {
