@@ -5,12 +5,10 @@
 <link rel="shortcut icon" type="image/jpg" href="galaxysun.ico"/>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="mainpages.css">
+<link rel="stylesheet" href="mainpages2.css">
 <style>
 body {
-  background-image: url('photo_2022-07-10_18-45-38.jpg');
-  background-size: 1920px 920px;
-  background-position: contain;
-  background-repeat: no-repeat;
+background-color: black;
 }
 </style>
 <script src=""></script>
@@ -29,9 +27,44 @@ body {
     <h1 class="h"><a class="link" href="https://play.google.com/store/apps/details?id=com.skytech.rail_simulator&hl=en_US&gl=US">SkyRail - CIS train simulator</a></h1>
 </div>
 
-<div class="navbar">
-    <a href="https://t.me/skytechdev">SkyTech (GameDev) Announcements channel</a>
-    <a class="navbar2" href="https://t.me/SkyTechDev_chat">SkyTech - project discussion</a>
+<h2 class="h" style="margin-left:30px; color:white;">About</h2>
+<p class="hei hi" style="margin-left:30px; color:white; margin-top: 5px">Highly detailed cars, train stations and other locations, as well as high-quality lighting and realistic sounds will completely immerse you into the game. Explore the world in no-clip mode, walk around the cars, create your own trains in the editor without any restrictions - you are trusted with the world of SkyRail.</p>
+<p class="hei hi" style="font-size:13px; margin-left:30px; margin-top: 2px;">Released on May 23rd, 2022. Requires Android version 6.0 or up.</p>
+<h2 class="h" style="margin-left:30px; color:white; margin-top: 5px">Updates</h2>
+
+<div class="container">
+
+    <div class="imgcontainer">
+        <div class="image"><img src="update1.jpg" alt=""></div>
+        <div class="image"><img src="update2.jpg" alt=""></div>
+        <div class="image"><img src="update3.jpg" alt=""></div>
+        <div class="image"><img src="update4.jpg" alt=""></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="images/update1.jpg" alt=""
+    </div>
+
 </div>
+
+<script>
+
+document.querySelectorAll('.imgcontainer img').forEach(image =>{
+  image.onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+  }
+});
+
+document.querySelector('.popup-image span').onclick = () =>{
+  document.querySelector('.popup-image').style.display = 'none';
+}
+
+</script>
+<p class="hei hi" style="text-align:center; margin-top: 5px">"Довольствоваться придется не только комфортными купейными вагонами"</p>
+
+<h2 class="h" style="margin-left:30px; color:white;">Contact Us</h2>
+<p class="hi hei" style="margin-left:30px; margin-top:5px">Keep watch and chat about the game - or give suggestions - at <a href="https://t.me/SkyTechDev_chat">SkyTech - project discussion</a> and <a href="https://t.me/skytechdev">SkyTech (GameDev)</a>.</p>
 </body>
 </html>
