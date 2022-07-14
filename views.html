@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Views - SkyRail</title>
+<link rel="shortcut icon" type="image/jpg" href="galaxysun.ico"/>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="mainpages.css">
+<link rel="stylesheet" href="mainpages2.css">
+<style>
+body {
+background-color: black;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+</style>
+<script src=""></script>
+<body>
+
+<div class="header">
+    <a href="https://velkycat.github.io/skyTech/Homepage.html" class="logo">SkyTech</a>
+    <div class="header-right">
+        <a class="active" href="https://velkycat.github.io/skyTech/skyrail.html" href="#home">SkyRail</a>
+        <a href="https://velkycat.github.io/skyTech/credits.html" href="#contact">Credits</a>
+        <a href="https://velkycat.github.io/skyTech/othergames.html" href="#about">Other Games</a>
+    </div>
+</div>
+
+<div style="padding:20px">
+    <h1 class="h hei" style="margin-left:30px; color:white;">Views</h1>
+    <p class="hei hi" style="margin-left:30px; margin-top:0px;">Some highlights of the views in SkyRail.</p>
+</div>
+
+<div class="container">
+
+    <div class="imgcontainer">
+        <div class="image" style="height:350px; width:450px;"><img src="city.jpg" alt="1.7"></div>
+        <div class="image" style="height:350px; width:450px;"><img src="bridge.jpg" alt="1.9"></div>
+        <div class="image" style="height:350px; width:450px;"><img src="houses.jpg" alt="1.9"></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="images/update1.jpg" alt=""
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="imgcontainer">
+        <div class="image" style="height:350px; width:450px;"><img src="vokzal.jpg" alt="2.0"></div>
+        <div class="image" style="height:350px; width:450px;"><img src="smallstation.jpg" alt="2.9"></div>
+        <div class="image" style="height:350px; width:450px;"><img src="st2.jpg" alt="2.9"></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="images/update1.jpg" alt=""
+    </div>
+</div>
+
+<script>
+
+document.querySelectorAll('.imgcontainer img').forEach(image =>{
+  image.onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+  }
+});
+
+document.querySelector('.popup-image span').onclick = () =>{
+  document.querySelector('.popup-image').style.display = 'none';
+}
+
+
+</script>
+</body>
+</html>
