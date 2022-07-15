@@ -5,6 +5,7 @@
 <link rel="shortcut icon" type="image/jpg" href="galaxysun.ico"/>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="mainpages.css">
+<link rel="stylesheet" href="mainpages2.css">
 <style>
 body {
   background-color: black;
@@ -28,12 +29,66 @@ body {
 </div>
 
 <div style="padding-left:20px">
-    <h2 class="h" style="color:white"><a class="link"href="https://velkycat.github.io/skyTech/trains.html">Trains</a></h2>
+    <h2 class="h" style="color:white"><a class="link" href="https://velkycat.github.io/skyTech/trains.html">Trains</a></h2>
+</div>
+<div class="container">
+
+    <div class="imgcontainer">
+        <div class="image"><img src="hrs2.jpg" alt=""></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="images/update1.jpg" alt=""
+    </div>
+
 </div>
 
 <div style="padding-left:20px">
-    <h2 class="h" style="color:white"><a class="link"href="https://velkycat.github.io/skyTech/views.html">Views</a></h2>
+    <h2 class="h" style="color:white"><a class="link" href="https://velkycat.github.io/skyTech/views.html">Views</a></h2>
+</div>
+<div class="container">
+
+    <div class="imgcontainer">
+        <div class="image"><img src="vokzal.jpg" alt=""></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="images/update1.jpg" alt=""
+    </div>
+
 </div>
 
+<div style="padding-left:20px">
+    <h2 class="h" style="color:white"><a class="link" href="https://velkycat.github.io/skyTech/traincars.html">Train Cars </a></h2>
+</div>
+<div class="container">
+
+    <div class="imgcontainer">
+        <div class="image"><img src="amndrf.jpg" alt=""></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="images/update1.jpg" alt=""
+    </div>
+
+</div>
+
+<script>
+
+document.querySelectorAll('.imgcontainer img').forEach(image =>{
+  image.onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+  }
+});
+
+document.querySelector('.popup-image span').onclick = () =>{
+  document.querySelector('.popup-image').style.display = 'none';
+}
+
+</script>
 </body>
 </html>
