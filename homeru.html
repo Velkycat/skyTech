@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Главная страница - СкайТек</title>
+<link rel="shortcut icon" type="image/jpg" href="hellnah.ico"/>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="mainpages.css">
+<link rel="stylesheet" href="mainpages2.css">
+<style>
+body {
+background-color: black;
+}
+</style>
+<script src=""></script>
+<body>
+
+<div class="header">
+    <a href="homeru.html" class="logo">СкайТек</a>
+    <div class="header-right">
+        <a class="active" href="homeru.html" href="#home">Главный</a>
+        <a href="skyrailru.html">Скайрельс</a>
+        <a href="creditsru.html" href="#contact">Кредиты</a>
+        <a href="othergames.html" href="#about">Другие Игры</a>
+        <a class="lang" style="font-family:Courier New" href="Homepage.html">RU/EN</a>
+    </div>
+</div>
+
+<div style="padding-left:20px">
+    <h1 class="h"><a class="link" href="https://play.google.com/store/apps/details?id=com.skytech.rail_simulator&hl=en_US&gl=US">SkyRail - симулятор поезда СНГ</a></h1>
+</div>
+
+<h2 class="h" style="margin-left:30px; color:white;">О</h2>
+<p class="hei hi" style="margin-left:30px; color:white; margin-top: 5px">Высокодеталлизированные вагоны, вокзалы и другие локации, а также качественное освещение и реалистичные звуки полностью погрузит вас в игру. Исследуйте мир в режиме ноуклип, ходите по вагонам, создавайте свои поезда в редакторе без каких-либо ограничений, вам доверяют мир игры SkyRail</p>
+<p class="hei hi" style="margin-left:30px;color:white;margin-top:5px;font-size:14px">Текущая версия: 2.16.0</p>
+<p class="hei hi" style="font-size:13px; margin-left:30px; margin-top: 2px;">Выпущено 23 мая 2022 г. Требуется Android версии 6.0 или выше.</p>
+<h2 class="h" style="margin-left:30px; color:white; margin-top: 5px">Обновления</h2>
+
+<div class="container">
+
+    <div class="imgcontainer">
+        <div class="image"><img src="update9.jpg" alt=""></div>
+        <div class="image"><img src="update10.jpg" alt=""></div>
+        <div class="image"><img src="update11.jpg" alt=""></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="images/update1.jpg" alt=""
+    </div>
+
+</div>
+
+<script>
+
+document.querySelectorAll('.imgcontainer img').forEach(image =>{
+  image.onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+  }
+});
+
+document.querySelector('.popup-image span').onclick = () =>{
+  document.querySelector('.popup-image').style.display = 'none';
+}
+
+</script>
+<p class="hei hi" style="text-align:center; margin-top: 5px">"Немного разнообразилась окружающая среда в 2.16.0"</p>
+
+<h2 class="h" style="margin-left:30px; color:white;">Contact Us</h2>
+<p class="hi hei" style="margin-left:30px; margin-top:5px">Следите за новостями и общайтесь об игре или делитесь предложениями в <a target="_blank" href="https://t.me/SkyTechDev_chat">SkyTech - обсуждение проектов</a> и <a href="https://t.me/skytechdev">SkyTech (GameDev)</a>.</p>
+</body>
+</html>
