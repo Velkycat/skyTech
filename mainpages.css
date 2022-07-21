@@ -3,6 +3,13 @@
   box-sizing: border-box;
 }
 
+ul.list {
+  color:white;
+  font-style:italic;
+  margin-top:10px;
+  text-align:center;
+}
+
 .bio {
   color: white;
   font-family: Times New Roman;
